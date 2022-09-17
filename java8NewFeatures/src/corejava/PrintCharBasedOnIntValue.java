@@ -1,23 +1,9 @@
-package test;
+package corejava;
 
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
-public class SortMapBasedOnValue {
+public class PrintCharBasedOnIntValue {
     public static void main(String[] args) {
-//        HashMap<String, Long> map = new HashMap<>();
-//        map.put("a", 2l);
-//        map.put("b", 1l);
-//        map.put("c", 3l);
-//        map
-//                .entrySet()
-//                .stream()
-//                .sorted(Comparator.comparing(Map.Entry::getValue))
-//                .forEach(e -> System.out.println(e.getKey() + ": "+ e.getValue()));
-
         String input = "a2p3c2";
 //        o/p: - aapppcc
         Character c = null;
@@ -37,7 +23,6 @@ public class SortMapBasedOnValue {
                 c = null;
                 num = 0;
             }
-//            i++;
         }
     }
 }
