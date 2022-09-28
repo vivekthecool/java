@@ -19,6 +19,14 @@ public class Employee implements Comparable {
         return department;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public Double getSalary() {
         return salary;
     }
@@ -47,6 +55,7 @@ public class Employee implements Comparable {
         list.add(new Employee(3, "vivek2", "abc", 9000d));
 
         list.add(new Employee(1, "vivek", "abc1", 10000d));
+        list.add(new Employee(1, "vicky", "abc1", 10000d));
         list.add(new Employee(2, "vivek1", "abc1", 5000d));
         list.add(new Employee(3, "vivek2", "abc1",  9000d));
 
