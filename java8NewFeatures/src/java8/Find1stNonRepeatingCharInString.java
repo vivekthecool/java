@@ -7,7 +7,7 @@ public class Find1stNonRepeatingCharInString {
         String str="abcdabgd";
 
         Character ch = str.chars()
-                .mapToObj(c -> Character.valueOf((char) c))
+                .mapToObj(c -> (char) c)
                 .collect(Collectors.toList())
                 .stream()
                 .filter(c -> str.indexOf(c) == str.lastIndexOf(c))

@@ -20,8 +20,8 @@ public class FindMinimumSalaryDepartmentWise {
                                                         Comparator.comparingDouble(e -> e.getSalary())),
                                                 Optional::get)));
 
-        for(Map.Entry<String, Employee> map: collect.entrySet()) {
-            System.out.println(map.getKey()+": "+ map.getValue().getSalary());
+        for (Map.Entry<String, Employee> map : collect.entrySet()) {
+            System.out.println(map.getKey() + ": " + map.getValue().getSalary());
         }
     }
 

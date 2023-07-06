@@ -18,18 +18,10 @@ public class CheckLowerAndHigherIndexEqualsOrNot {
         int lowerIndex = 0;
 
         for(int i = 0; i < arr.length; i++) {
-            if((arr.length % 2) == 0) {
-                if(i < mid) {
-                    lowerIndex += arr[i];
-                } else {
-                    lowerIndex -= arr[i];
-                }
-            } else {
-                if(i < mid) {
-                    lowerIndex += arr[i];
-                } else if(i > mid) {
-                    lowerIndex -= arr[i];
-                }
+            if(i < mid) {
+                lowerIndex += arr[i];
+            } else if(i > mid) {
+                lowerIndex -= arr[i];
             }
         }
 

@@ -1,6 +1,7 @@
 package utility;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Employee implements Comparable {
     private Integer id;
@@ -67,5 +68,18 @@ public class Employee implements Comparable {
     @Override
     public int compareTo(Object o) {
         return 0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Objects.equals(id, employee.id) && Objects.equals(name, employee.name) && Objects.equals(department, employee.department) && Objects.equals(salary, employee.salary);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, department, salary);
     }
 }

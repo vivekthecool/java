@@ -17,5 +17,7 @@ public class CreateGenericListAndPrint {
         for(Object o: list) {
             System.out.println(o);
         }
+
+//        System.out.println('c' + 3);
     }
 }

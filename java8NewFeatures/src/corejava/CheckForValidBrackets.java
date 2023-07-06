@@ -8,7 +8,7 @@ public class CheckForValidBrackets {
 //        Input: s = "()", Output: true
 //        Input: s = "()[]{}", Output: true
 //        Input: s = "(]", Output: false
-//        Input: s = "({[}])"
+//        Input: s = "({[}]), Output: false"
         Stack<Character> stack = new Stack<>();
         String input = null;
         Boolean check = Boolean.FALSE;
